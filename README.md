@@ -2,22 +2,21 @@
 
 ## **GHO-Energy**
 
-## Activating Sustainable energy project in Africa using onchain mechanics (GHO and Chainlink) and establishing a link between energy communities and crowdlending to finance projects.
+**Activating Sustainable energy project in Africa using onchain mechanics (GHO and Chainlink) and establishing a link between energy communities and crowdlending to finance projects.**
 
 ## Inspiration
 
 The inspiration for GHO-Energy emerged from the growing need to address climate change at a hyper-local level especially in Africa and the desire to empower local communities in managing their energy resources. The platform is designed to facilitate energy community creation and crowdlending, which allows multiple investors to pool their money together to fund a project.
 
-## What it does
-
 ![Banner](frontend/src/assets/images/energylink2.png)
 
-**The Problem**
-Sustainable energy growth faces hurdles:
+**The Problem :**
+
+Sustainable energy growth faces the following hurdles in Africa:
 
 1. Governance: creating a community with trusted parties.
 
-2. Financing: access to the right capital and funders want an easier way to find & invest in projects.
+2. Financing: access to the right capital and investors (funders) want an easier way to find & invest in projects.
 
 3. Operational support: energy trading and connections to the stakeholders.
 
@@ -27,14 +26,26 @@ Imagine if you could be part of a renewable energy community and contribute and 
 
 ## What it does
 
-**Our Solution**
+Implementing a groundbreaking Sustainable Energy Project in Africa involves leveraging onchain mechanics, specifically utilizing the robust capabilities of GHO and Chainlink. This initiative aims not only to harness the potential of blockchain technology but also to forge a vital connection between energy communities and crowdlending platforms for project financing. The integration of onchain mechanisms, such as GHO and Chainlink, enhances the efficiency and transparency of the entire process, ensuring a seamless execution of sustainable energy initiatives across the African continent.
+
+The utilization of GHO and Chainlink introduces a sophisticated layer of decentralized technology, enabling secure and tamper-resistant transactions. This not only safeguards the integrity of the sustainable energy project but also establishes a foundation of trust among stakeholders. Furthermore, the establishment of a direct link between energy communities and crowdlending platforms presents an innovative approach to financing. By fostering a collaborative environment, this connection facilitates the flow of funds from diverse sources, ensuring a more resilient and inclusive financial model.
+
+In essence, the Sustainable Energy Project in Africa, driven by onchain mechanics like GHO and Chainlink, becomes a catalyst for positive change. It not only addresses the pressing need for sustainable energy solutions but also pioneers a novel approach to project financing. Through the seamless integration of blockchain technology, this initiative sets a precedent for future endeavors in the realm of sustainable development, emphasizing transparency, security, and community-driven support as the cornerstones of excellence.
+
+### **Our Solution**
+
 A dApp that allows users to:
 
 1. Create an energy community with DAO governance
 2. Raise financing through a crowd lending campaign
 3. Local energy trading and a dashboard to track your renewable energy positive impact
+4. GHO Token as the accepted currency in this energy DAO
+5. GHO Token is a utility token that can be used to pay for energy consumption and to pay for energy production
+6. GHO Token is also used to pay for energy community maintenance and operations
 
-GHO-Energy is a DAO based platform designed to facilitate the management of energy communities. The project creates a platform to enable individuals to build and join "energy communities" (group of people who can pool energy & resources) with DAO governance, create campaigns to raise funds for sustainable energy projects, and invest in sustainable energy and climate protection projects. The platform is designed to facilitate energy community creation and crowdlending, which allows multiple investors to pool their money together to fund a project.
+### **Our Vision**
+
+GHO-Energy is a DAO based platform designed to facilitate the management of energy communities. The project creates a platform to enable individuals to build and join "energy communities" (group of people who can pool energy & resources) with DAO governance, create campaigns to raise funds for sustainable energy projects, and invest in sustainable energy and climate protection projects. The platform is designed to facilitate energy community creation and crowdlending with GHO token, which allows multiple investors to pool their money together to fund a project.
 
 We are leveraging Chainlink Functions to:
 
@@ -42,6 +53,7 @@ We are leveraging Chainlink Functions to:
 2. Gather energy prices from the electricity market, presently inclusive of the Iberian Market—Portugal and Spain.
 3. Fetch energy tariffs from the regulator, currently only in Portugal.
 4. Execute an algorithm that calculates the equilibrium price and the transactions within your community every hour.
+5. Making the project a multi-chain project.
 
 ## How we built it
 
@@ -54,7 +66,7 @@ The smart contracts used in GHO-Energy provide the following:
 1. Create new Communities: Users can use the platform to create energy communities with a DAO governance. Energy Community is defined in regulatory frameworks across Europe and USA to allow citizens, businesses and public entities to take an active role in decarbonization. One of the advantages is the possibility of exchanging energy between the members of the community in a P2P scheme.
 2. DAO governance: The DAO should help members decide who is in or out of the community, and allow for shared decision making on investments, assets maintenance, energy sharing, community operation, etc.
    Financing: The Crowdloan smart contract allows investors to pledge assets to a particular community. During a certain period the funds are locked. Afterwards, the investors are able to withdraw their funds plus the yield.
-3. Operational Support: The platform leverages Chainlink Functions to fetch: a. energy prices from eletricity market, b. energy tariffs from the regulator c. community members consumption and production from the energy distributor and d. execute market algorithm (double auction) to calculate the equilibrium price and transaction every hour. The data is stored on chain, can be used by 3rd party providers to bill members according to the market results. It could also be used, for an on-chain settlement between members of the community. This feature was only developed for the Iberian Market (Portugal and Spain).
+3. Operational Support: The platform leverages Chainlink Functions to fetch: a. energy prices from electricity market, b. energy tariffs from the regulator c. community members consumption and production from the energy distributor and d. execute market algorithm (double auction) to calculate the equilibrium price and transaction every hour. The data is stored on chain, can be used by 3rd party providers to bill members according to the market results. It could also be used, for an on-chain settlement between members of the community. This feature was only developed for the Iberian Market (Portugal and Spain).
 
 ## Challenges we ran into
 
