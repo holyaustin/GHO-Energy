@@ -1,6 +1,6 @@
 import Container from "components/Container";
 import NavLinks from "components/Header/NavLinks";
-import logo from "assets/images/energylink.png";
+import logo from "assets/images/ghoblacksmall.png";
 
 export function Footer() {
   return (
@@ -11,7 +11,7 @@ export function Footer() {
             <div className="flex items-center text-gray-900">
               <img src={logo} alt="logo" width="160px"></img>
               <div className="ml-4">
-                <p className="text-base font-semibold">EnegyLink</p>
+                <p className="text-base font-semibold">GHO-Energy</p>
                 <p className="mt-1 text-sm">
                   Your Energy Community starts here!
                 </p>

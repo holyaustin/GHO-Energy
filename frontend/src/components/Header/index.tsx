@@ -8,7 +8,7 @@ import { useMoralis } from "react-moralis";
 import { useNavigate } from "react-router-dom";
 
 // Components
-import logo from "assets/images/energylink2.png";
+import logo from "assets/images/ghogreensmall.png";
 import NavLinks from "components/Header/NavLinks";
 import AccountModal from "components/Modals/AccountModal";
 import { DefaultButton } from "components/Buttons/DefaultButton";
@@ -87,7 +87,7 @@ export function Header() {
                 }}
                 disabled={disabled}
               >
-                {!isLoggedIn ? "Login" : "My Account"}
+                {!isLoggedIn ? "Connect Wallet" : "My Account"}
               </DefaultButton>
               {isLoggedIn && (
                 <DefaultButton

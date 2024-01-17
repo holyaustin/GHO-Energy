@@ -4,9 +4,9 @@ const faqs = [
   [
     {
       question:
-        "What is the EnegyLink project about and how does it relate to Energy Communities?",
+        "What is the GHO-Energy project about and how does it relate to Energy Communities?",
       answer:
-        "EnegyLink is a web 3 project that provides a platform for the creation and management of Energy Communities. It was inspired by the need to combat climate change and empower local communities in managing their energy resources. This project facilitates collaborative decision-making and investment in renewable energy.",
+        "GHO-Energy is a web 3 project that provides a platform for the creation and management of Energy Communities. It was inspired by the need to combat climate change and empower local communities in managing their energy resources. This project facilitates collaborative decision-making and investment in renewable energy.",
     },
     {
       question: "What benefits can I gain from creating an Energy Community?",
@@ -25,7 +25,7 @@ const faqs = [
       question:
         "What is the process for onboarding members into my Energy Community?",
       answer:
-        "The process for onboarding members into your Energy Community will depend on the governance decisions made by the community. The EnegyLink platform supports you throughout this process, ensuring a smooth and straightforward experience.",
+        "The process for onboarding members into your Energy Community will depend on the governance decisions made by the community. The GHO-Energy platform supports you throughout this process, ensuring a smooth and straightforward experience.",
     },
     {
       question:

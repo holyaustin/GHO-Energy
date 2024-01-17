@@ -13,14 +13,14 @@ export default function HeaderContainer(props: HeaderContainerProps) {
 
   if (!community) {
     return (
-      <Container className="relative z-50 flex justify-between py-8">
+      <Container className="relative z-50 flex justify-between py-2">
         {props.children}
       </Container>
     );
   }
 
   return (
-    <div className="rmx-auto relative z-50 flex justify-between px-4 py-8 sm:px-6 lg:px-8">
+    <div className="rmx-auto relative z-50 flex justify-between px-4 py-2 sm:px-6 lg:px-8">
       {props.children}
     </div>
   );

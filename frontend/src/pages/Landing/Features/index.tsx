@@ -381,7 +381,7 @@ export function Features() {
             Now is the time to build your Energy Community!
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            The inspiration for EnegyLink emerged from the growing need to
+            The inspiration for GHO-Energy emerged from the growing need to
             address climate change and the desire to empower local communities
             in managing their energy resources.
           </p>
