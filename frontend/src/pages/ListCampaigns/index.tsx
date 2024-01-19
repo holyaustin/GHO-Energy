@@ -23,7 +23,7 @@ export default function ListCampaigns(props: ListCampaignsProps) {
           address={crowdloan}
           activationDate={props.data._campaigns[index].startAt}
           expirationDate={props.data._campaigns[index].endAt}
-          title={"EcoDAO"}
+          title={"GHO-Energy"}
         />
       ))}
     </div>

@@ -1,15 +1,17 @@
 import { contractAddresses } from "./addresses";
 
 export const assets = [
-  { value: "ECO", label: "ECO Mock" },
-  { value: "DAI", label: "DAI Mock" },
-  { value: "WETH", label: "WETH Mock" },
-  { value: "USDC", label: "USDC Mock" },
+  { value: "GHO", label: "GHO Token" },
+  // { value: "ECO", label: "ECO Token" },
+  { value: "DAI", label: "DAI Token" },
+  //{ value: "WETH", label: "WETH Token" },
+  { value: "USDC", label: "USDC Token" },
 ];
 
 export const assetToAddress = (chainId: string) => ({
-  ECO: contractAddresses[chainId]["erc20Mock"],
-  WETH: contractAddresses[chainId]["weth"],
+  GHO: contractAddresses[chainId]["gho"],
+  DAI: contractAddresses[chainId]["dai"],
+  USDC: contractAddresses[chainId]["usdc"],
 });
 
 export const getAddressFromAsset = (asset: string, chainId: string) =>

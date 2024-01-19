@@ -44,7 +44,8 @@ const Roadmap = () => {
                   with key features like governance protocols, financing
                   mechanisms, and energy trading support. Feedback from this
                   phase will help us refine our platform before the mainnet
-                  launch.
+                  launch. Support for GHO token as the means of payment for
+                  energy.{" "}
                 </p>
               </div>
             </li>

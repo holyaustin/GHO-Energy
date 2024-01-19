@@ -66,7 +66,7 @@ export default function NewCrowdloan() {
     await tx.wait();
     setActiveStep(3);
     toast.update(toastId, {
-      render: "Crowload created!",
+      render: "Crowdloan created!",
       type: toast.TYPE.SUCCESS,
       position: "top-right",
       isLoading: false,
@@ -78,7 +78,7 @@ export default function NewCrowdloan() {
     /* eslint-disable no-console */
     console.error(error);
     toast.update(toastId, {
-      render: "Error creting campaign!",
+      render: "Error creating campaign!",
       type: toast.TYPE.ERROR,
       position: "top-right",
       isLoading: false,

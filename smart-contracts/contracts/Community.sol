@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.17;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "hardhat/console.sol";
@@ -14,8 +14,8 @@ import "./interfaces/ICommunityItems.sol";
 /* Errors */
 error Community__MemberIsInCommunity();
 
-/** @title Energy Community Contract
- *  @author EcoVerse
+/** @title GHO-Energy Community Contract
+ *  @author GHO-Energy
  *  @notice This contract is for creating a decentalized energy community
  */
 contract Community is Ownable {

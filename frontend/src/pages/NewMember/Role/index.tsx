@@ -29,13 +29,13 @@ export default function RoleInfo(props: RoleInfoProps) {
         name="meterIdentifier"
         type="text"
         onChange={onInputChange}
-        placeholder={"A123B123C123D"}
+        placeholder={"G123H123C123D"}
         defaultValue={props.values.meterIdentifier}
         required
       />
       <TextField
         label="Location Latitude"
-        placeholder="0.0"
+        placeholder="0"
         id="latitude"
         name="latitude"
         type="number"
@@ -46,7 +46,7 @@ export default function RoleInfo(props: RoleInfoProps) {
       <TextField
         label="Location Longitude"
         id="longitude"
-        placeholder="0.0"
+        placeholder="0"
         name="longitude"
         type="number"
         defaultValue={props.values.longitude}
