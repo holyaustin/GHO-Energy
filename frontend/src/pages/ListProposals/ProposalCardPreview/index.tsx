@@ -28,7 +28,7 @@ const ProposalCardPreview: FC<ProposalCardPreviewProps> = ({
           <div className=" text-gray-500">{proposal.result}...</div>
         ) : (
           <div
-            className={`w-fit rounded-2xl py-1 px-4 font-normal text-white ${
+            className={`w-fit rounded-2xl  px-4 py-1 font-normal text-white ${
               proposal.result === "Failed" ? " bg-red-600 " : " bg-green-600"
             }`}
           >

@@ -9,7 +9,7 @@ type DetailCardProps = {
 export default function DetailCard(props: DetailCardProps) {
   return (
     <div className="flex w-full flex-row rounded-xl bg-[rgba(244,246,249,1)]">
-      <div className="mt-2 mb-2 flex flex-row">
+      <div className="mb-2 mt-2  flex flex-row">
         <ClockIcon className="text-grey-500 m-2 h-6 w-6" />
         <div className="flex-grow-3 flex flex-col">
           <p className="mr-1 text-left text-sm font-medium text-gray-700">

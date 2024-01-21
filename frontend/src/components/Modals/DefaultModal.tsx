@@ -40,10 +40,10 @@ const DefaultModal: React.FC<ModalProps> = (props: ModalProps) => {
     >
       <div
         ref={modalRef}
-        className={`absolute top-2/5 left-1/2 w-1/4 -translate-y-1/2 -translate-x-1/2 transform content-center rounded-lg bg-white p-8 shadow-2xl ${props.className}`}
+        className={`absolute left-1/2 top-2/5  w-1/4 -translate-x-1/2 -translate-y-1/2  transform content-center rounded-lg bg-white p-8 shadow-2xl ${props.className}`}
       >
         <button
-          className="absolute top-0 right-2 p-2 text-black"
+          className="absolute right-2 top-0 p-2 text-black"
           onClick={props.closeFunction}
         >
           X

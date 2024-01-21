@@ -14,7 +14,7 @@ const Roadmap = () => {
           <ul className="mx-auto mt-16 max-w-md space-y-12">
             <li className="relative flex items-start">
               <div
-                className="absolute top-14 left-8 -ml-0.5 mt-0.5 h-full w-px border-l-4 border-dotted border-gray-300"
+                className="absolute left-8 top-14 -ml-0.5 mt-0.5 h-full w-px border-l-4 border-dotted border-gray-300"
                 aria-hidden="true"
               ></div>
 
@@ -52,7 +52,7 @@ const Roadmap = () => {
 
             <li className="items-ce relative flex">
               <div
-                className="rotate- absolute top-14 left-8 -ml-0.5 mt-0.5 h-full w-px border-l-4 border-dotted border-gray-300"
+                className="rotate- absolute left-8 top-14 -ml-0.5 mt-0.5 h-full w-px border-l-4 border-dotted border-gray-300"
                 aria-hidden="true"
               ></div>
 
