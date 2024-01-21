@@ -58,7 +58,7 @@ We are leveraging Chainlink Functions to:
 ## How we built it
 
 Tech stack:
-React, Typescript, Tailwind, EVM-compatible smart contracts written in Solidity provides business logic and trust for the platform IPFS to store images of energy community membership NFTs, Chainlink Functions with Automation, Magic Link
+React, Typescript, Tailwind, EVM-compatible smart contracts written in Solidity provides business logic and trust for the platform IPFS to store images of energy community membership NFTs, Chainlink Functions with Automation, Magic Link for both web2 and web3 login.
 
 Smart contract functionalities:
 The smart contracts used in GHO-Energy provide the following:
@@ -66,7 +66,7 @@ The smart contracts used in GHO-Energy provide the following:
 1. Create new Communities: Users can use the platform to create energy communities with a DAO governance. Energy Community is defined in regulatory frameworks across Europe and USA to allow citizens, businesses and public entities to take an active role in decarbonization. One of the advantages is the possibility of exchanging energy between the members of the community in a P2P scheme.
 2. DAO governance: The DAO should help members decide who is in or out of the community, and allow for shared decision making on investments, assets maintenance, energy sharing, community operation, etc.
    Financing: The Crowdloan smart contract allows investors to pledge assets to a particular community. During a certain period the funds are locked. Afterwards, the investors are able to withdraw their funds plus the yield.
-3. Operational Support: The platform leverages Chainlink Functions to fetch: a. energy prices from electricity market, b. energy tariffs from the regulator c. community members consumption and production from the energy distributor and d. execute market algorithm (double auction) to calculate the equilibrium price and transaction every hour. The data is stored on chain, can be used by 3rd party providers to bill members according to the market results. It could also be used, for an on-chain settlement between members of the community. This feature was only developed for the Iberian Market (Portugal and Spain).
+3. Operational Support: The platform leverages Chainlink Functions to fetch: a. energy prices from electricity market, b. energy tariffs from the regulator c. community members consumption and production from the energy distributor and d. execute market algorithm (double auction) to calculate the equilibrium price and transaction every hour. The data is stored on chain, can be used by 3rd party providers to bill members according to the market results. It could also be used, for an on-chain settlement between members of the community.
 
 ## Challenges we ran into
 
@@ -94,6 +94,18 @@ With the right funding we aim to:
 ## Deployed on Sepolia
 
 deploying "CrowdloanFactory" (tx: 0x1f0d6b06021335b350351fff052828b393c72d1dc8af377b3bfce942d90ecbad)...: deployed at 0x42Fc1d53EcF8B4c46989da0d44f07490668338c8 with 1711295 gas
+
+deploying "CommunityItemsFactory" (tx: 0xe727f87f1833bea8ef89c4a434a350f6da8249b584dd18e015d6bb97eb45edc0)...: deployed at 0xEbb3113e97eeaA16Dcc2FebD6a1617AB731066AE with 3058926 gas
+
+deploying "TimeLockFactory" (tx: 0x02fd893a61e621ccc643412555b4e0fa258d3d6cb1213a4cdb967bac8c815008)...: deployed at 0x5E4e5347eB417982375Ef9BDe0B77F4322FCF79F with 2077603 gas
+
+deploying "GovernanceFactory" (tx: 0xb3d270abab87b699fbde751fa9b6a3f23a88ccc38b74e760419f05cffbf76a28)...: deployed at 0x1B7a6536f23a16e198246A3f80Cd646f86856F11 with 5081541 gas
+
+deploying "CommunityFactory" (tx: 0x25ede639744c2630b8462195bc129a63b33646ead29e635c6c47460849f56195)...: deployed at 0x60cF847C6Ea49009ae290F749451F4CB66CAD0B2 with 1358395 gas
+
+## Deployed on Avalanche C Chain
+
+deploying "CrowdloanFactory" (tx: 0x1f0d6b06021335b350351fff052828b393c72d1dc8af377b3bfce942d90ecbad)...: deployed at 0x0e033D0A7ab13ab4E55206bA80d53179d9439de4 with 1711295 gas
 
 deploying "CommunityItemsFactory" (tx: 0xe727f87f1833bea8ef89c4a434a350f6da8249b584dd18e015d6bb97eb45edc0)...: deployed at 0xEbb3113e97eeaA16Dcc2FebD6a1617AB731066AE with 3058926 gas
 
