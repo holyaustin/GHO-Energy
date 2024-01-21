@@ -102,3 +102,44 @@ deploying "TimeLockFactory" (tx: 0x02fd893a61e621ccc643412555b4e0fa258d3d6cb1213
 deploying "GovernanceFactory" (tx: 0xb3d270abab87b699fbde751fa9b6a3f23a88ccc38b74e760419f05cffbf76a28)...: deployed at 0x1B7a6536f23a16e198246A3f80Cd646f86856F11 with 5081541 gas
 
 deploying "CommunityFactory" (tx: 0x25ede639744c2630b8462195bc129a63b33646ead29e635c6c47460849f56195)...: deployed at 0x60cF847C6Ea49009ae290F749451F4CB66CAD0B2 with 1358395 gas
+
+## Gho Integration
+
+```typescript
+import {
+  Pool,
+  InterestRate,
+  EthereumTransactionTypeExtended,
+} from "@aave/contract-helpers";
+import { BigNumber, providers } from 'ethers';
+
+  function submitTransaction({
+    provider: ethers.providers.provider,  // Signing transactions requires a wallet provider
+    tx: EthereumTransactionTypeExtended
+  }) {
+
+    const pool = new Pool(provider, {
+      POOL: "0x3De59b6901e7Ad0A19621D49C5b52cC9a4977e52", // Goerli GHO market
+      WETH_GATEWAY: "0x9c402E3b0D123323F0FCed781b8184Ec7E02Dd31", // Goerli GHO market
+    });
+
+    const extendedTxData = await tx.tx();
+    const { from, ...txData } = extendedTxData;
+    const signer = provider.getSigner(from);
+    const txResponse = await signer.sendTransaction({
+      ...txData,
+      value: txData.value ? BigNumber.from(txData.value) : undefined,
+    });
+
+    const txs: EthereumTransactionTypeExtended[] = await pool.borrow({
+      user: "0xa6D6f4556B022c0C7051d62E071c0ACecE5a1228",
+      reserve: "0xcbE9771eD31e761b744D3cB9eF78A1f32DD99211", // Goerli GHO market
+      amount: "125",
+      interestRateMode: "InterestRate.Stable",
+      0,
+      //debtTokenAddress: "0xd4FEA5bD40cE7d0f7b269678541fF0a95FCb4b68", // Sepolia debt Token GHO market 0x54bdE009156053108E73E2401aEA755e38f92098
+      //onBehalfOf,
+      //referralCode,
+    });
+  }
+```

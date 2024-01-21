@@ -1,3 +1,4 @@
+/* eslint-disable no-inline-comments */
 // Core
 import { useWeb3Contract, useMoralis } from "react-moralis";
 import { crowdloanFactoryAbi } from "utils/abis";

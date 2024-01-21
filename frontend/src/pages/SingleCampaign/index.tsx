@@ -11,6 +11,7 @@ import DetailCard from "./DetailCard";
 import Description from "./Description";
 import { TextField } from "components/Fields";
 import { DefaultButton } from "components/Buttons/DefaultButton";
+import depositETHAndBorrowGHO from "./Gho.jsx";
 
 // Utils
 import { BigNumberToDate } from "utils/time";
@@ -173,6 +174,17 @@ const CrowdloanCard = (props: CrowdloanCardProps) => {
           variant="solid"
         >
           {allowanceIncreased ? "Lend" : "Allow"}
+        </DefaultButton>
+      </div>
+      <div>
+        <DefaultButton
+          onClick={depositETHAndBorrowGHO}
+          color="green"
+          className="col-span-1 m-3 ml-auto w-full"
+          disabled={!canSave}
+          variant="solid"
+        >
+          {allowanceIncreased ? "Deposit ETH" : "Borrow GHO"}
         </DefaultButton>
       </div>
     </div>
