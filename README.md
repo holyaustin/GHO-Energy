@@ -8,7 +8,7 @@
 
 The inspiration for GHO-Energy emerged from the growing need to address climate change at a hyper-local level especially in Africa and the desire to empower local communities in managing their energy resources. The platform is designed to facilitate energy community creation and crowdlending, which allows multiple investors to pool their money together to fund a project.
 
-![Banner](frontend/src/assets/images/energylink2.png)
+![Banner](frontend/src/assets/images/gho-banner.png)
 
 **The Problem :**
 
@@ -43,6 +43,9 @@ A dApp that allows users to:
 5. GHO Token is a utility token that can be used to pay for energy consumption and to pay for energy production
 6. GHO Token is also used to pay for energy community maintenance and operations
 
+## Demo Links
+Youtube demo : https://youtu.be/xP5mQCRhnio
+Demo Url : 
 ### **Our Vision**
 
 GHO-Energy is a DAO based platform designed to facilitate the management of energy communities. The project creates a platform to enable individuals to build and join "energy communities" (group of people who can pool energy & resources) with DAO governance, create campaigns to raise funds for sustainable energy projects, and invest in sustainable energy and climate protection projects. The platform is designed to facilitate energy community creation and crowdlending with GHO token, which allows multiple investors to pool their money together to fund a project.

@@ -1,6 +1,7 @@
 // Core
 import clsx from "clsx";
 import { useNavigate } from "react-router-dom";
+import { ConnectKitButton } from "connectkit";
 
 // Components
 import GithubIcon from "components/Icons/Github";
@@ -33,6 +34,7 @@ export function Hero() {
               Token and energy trading.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
+              <ConnectKitButton />
               <Button
                 className="bg-green-600"
                 onClick={() => navigate("/create-community")}
